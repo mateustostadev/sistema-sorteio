@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador de Nomes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteio de Nomes</h1>
+        <form id="nameForm">
+            <label for="name">Digite um nome:</label>
+            <input type="text" id="name" required>
+            <button type="button" onclick="addName()">Adicionar</button>
+        </form>
+        <div id="nameList"></div>
+        <button type="button" onclick="drawWinner()">Sortear Vencedor</button>
+        <div id="winner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
